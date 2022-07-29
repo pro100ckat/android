@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="S1">RPC</string>
+    <string name="HW">Hello RPC</string>
+    <string name="button">+</string>
+    <string name="HelloSlava">Hello Slava</string>
+    <string name="ravmo">=</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="helper">Здесь будут отображаться действия</string>
+    <string name="helper2">Теперь введите второе число и нажмите равно</string>
+    <string name="helper3">Введите число и выберите действие</string>
+    <string name="zerodivide">Деление на ноль!</string>
+    <string name="SomeValue">Some value 2</string>
+    <string name="square">X^2</string>
+</resources>

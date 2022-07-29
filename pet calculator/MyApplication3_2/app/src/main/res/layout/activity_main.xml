@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ksumkin.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/helper"
+        android:inputType="numberSigned"
+        android:textAlignment="textEnd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:onClick="OnClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/ravno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ravmo"
+        android:onClick="OnClickRavno"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/minus" />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:onClick="OnClick"
+        app:layout_constraintLeft_toRightOf="@+id/multiply"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"
+        android:text="@string/multiply"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintLeft_toRightOf="@+id/plus"
+         />
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"
+        android:text="@string/divide"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        />
+    <Button
+        android:id="@+id/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"
+        android:text="@string/square"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        app:layout_constraintLeft_toRightOf = "@+id/divide"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
